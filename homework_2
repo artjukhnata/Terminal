@@ -178,10 +178,10 @@ grep -lr "sec" *| xargs -i{} cp {} dir_44
 
 38. Команда в одну строку. 
 Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.
-grep -lr "sec" *| xargs -i{} echo > new_file.txt
+grep -lr "sec" *| xargs echo > new_file.txt
 
 39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
-grep -r "sec" * | xargs -i{} rm
+grep -r "sec" * | xargs rm
 
 40. Просто вывести в терминал строку “Good job!!”
 echo “Good job!!”
